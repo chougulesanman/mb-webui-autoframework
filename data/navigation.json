@@ -1,0 +1,13 @@
+{
+  "topMenu": {
+    "dashboard": "Dashboard",
+    "markets": "Markets",
+    "trade_id": "trade-header-option-open-button",
+    "features_id": "features-header-option-open-button",
+    "aboutus_id": "about-header-option-open-button",
+    "support_id": "support-header-option-open-button",
+    "tradeDropdown": {
+      "spot": "Spot"
+    }
+  }
+}

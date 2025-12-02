@@ -1,0 +1,44 @@
+{
+  "testCases": [
+    {
+      "name": "hello world",
+      "input": "hello world",
+      "expected": "h:1, e:1, l:3, o:2,  :1, w:1, r:1, d:1"
+    },
+    {
+      "name": "case sensitivity",
+      "input": "Hello",
+      "expected": "H:1, e:1, l:2, o:1"
+    },
+    {
+      "name": "empty string",
+      "input": "",
+      "expected": ""
+    },
+    {
+      "name": "single char",
+      "input": "a",
+      "expected": "a:1"
+    },
+    {
+      "name": "repeated chars",
+      "input": "aabbcc",
+      "expected": "a:2, b:2, c:2"
+    },
+    {
+      "name": "numbers",
+      "input": "123321",
+      "expected": "1:2, 2:2, 3:2"
+    },
+    {
+      "name": "order of appearance",
+      "input": "abcabc",
+      "expected": "a:2, b:2, c:2"
+    },
+    {
+      "name": "special characters",
+      "input": "a@b#c!",
+      "expected": "a:1, @:1, b:1, #:1, c:1, !:1"
+    }
+  ]
+}

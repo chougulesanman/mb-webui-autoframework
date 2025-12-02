@@ -1,0 +1,33 @@
+{
+  "name": "mb-webui-autoframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:string": "playwright test tests/stringFrequency.spec.ts",
+    "string-frequency": "ts-node src/utils/stringFrequency.ts",
+    "test:nav": "playwright test tests/navigation.spec.ts --headed",
+    "report": "npm run allure:generate && npm run allure:open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chougulesanman/mb-webui-autoframework.git"
+  },
+  "keywords": [],
+  "author": "Sanman Chougule",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chougulesanman/mb-webui-autoframework/issues"
+  },
+  "homepage": "https://github.com/chougulesanman/mb-webui-autoframework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^20.19.25",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^2.15.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
