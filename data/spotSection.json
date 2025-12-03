@@ -1,0 +1,20 @@
+{
+    "title": "Spot",
+    "categories": {
+      "favorites_id": "favorites",
+      "all_id": "all",
+      "usdt_id": "usdt",
+      "btc_id": "btc",
+      "fiat_id": "fiat",
+      "themes_id": "themes"
+    },
+    "tableColumns": {
+      "pair_id": "undefined-base-th",
+      "price_id": "undefined-price-th",
+      "change24h_id": "undefined-change_in_price-th",
+      "high_id": "undefined-high_24hr-th",
+      "low_id": "undefined-low_24hr-th",
+      "last7Days_id": "undefined-base_volume-th"
+    },
+    "showMore": "Show More"
+}
