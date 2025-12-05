@@ -4,8 +4,9 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 2 : '25%',
+  retries: process.env.CI ? 2 : 1,
+  // workers: process.env.CI ? 2 : '25%',
+  workers: process.env.CI ? 2 : 1,
   expect: {
     timeout: 30000
   },
@@ -24,7 +25,6 @@ export default defineConfig({
     video: 'retain-on-failure',
     actionTimeout: 15000,
     navigationTimeout: 30000,
-    viewport: { width: 1920, height: 1080 },
   },
   projects: [
       { name: 'chromium', use: { ...devices['Desktop Chrome'], viewport: { width: 1920, height: 1080 } } },

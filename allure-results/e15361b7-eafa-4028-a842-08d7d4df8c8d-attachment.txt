@@ -1,0 +1,2 @@
+Cells: locator('table').first().locator('tbody tr').first().locator('td')
+Cell count: 7

@@ -1,0 +1,904 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Logo Multibankio" [ref=e5] [cursor=pointer]:
+          - /url: /en-AE/
+          - img "Logo Multibankio" [ref=e6]
+        - generic [ref=e7]:
+          - link "Dashboard" [ref=e9] [cursor=pointer]:
+            - /url: https://trade.multibank.io/
+            - heading "Dashboard" [level=2] [ref=e10]
+          - link "Markets" [ref=e12] [cursor=pointer]:
+            - /url: https://trade.multibank.io/markets
+            - heading "Markets" [level=2] [ref=e13]
+          - generic [ref=e15] [cursor=pointer]:
+            - heading "Trade" [level=2] [ref=e16]
+            - generic [ref=e17]:
+              - img
+          - generic [ref=e20] [cursor=pointer]:
+            - heading "Features" [level=2] [ref=e21]
+            - generic [ref=e22]:
+              - img
+          - generic [ref=e25] [cursor=pointer]:
+            - heading "Partnership" [level=2] [ref=e26]
+            - generic [ref=e27]:
+              - img
+          - generic [ref=e30] [cursor=pointer]:
+            - heading "Support" [level=2] [ref=e31]
+            - generic [ref=e32]:
+              - img
+          - link "Blog & News" [ref=e35] [cursor=pointer]:
+            - /url: /en-AE/about/blog
+            - heading "Blog & News" [level=2] [ref=e36]
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - img [ref=e41] [cursor=pointer]
+          - generic [ref=e44]:
+            - img [ref=e47] [cursor=pointer]
+            - heading "en" [level=2] [ref=e50]
+            - img [ref=e52]
+        - generic [ref=e55]:
+          - link "LOGIN" [ref=e56] [cursor=pointer]:
+            - /url: https://trade.multibank.io/login
+            - button "LOGIN" [ref=e57]:
+              - generic [ref=e58]: LOGIN
+          - link "SIGN UP" [ref=e59] [cursor=pointer]:
+            - /url: https://trade.multibank.io/register
+            - button "SIGN UP" [ref=e60]:
+              - generic [ref=e61]: SIGN UP
+    - generic [ref=e64]:
+      - generic [ref=e66]:
+        - generic [ref=e69]:
+          - generic:
+            - generic:
+              - generic:
+                - heading "SECURE FINANCIAL ECOSYSTEM POWERED BY THE BLOCKCHAIN!" [level=2]
+                - paragraph:
+                  - text: Enjoy our revolutionary comprehensive suite of
+                  - strong: innovative solutions
+                  - text: ", including a digital bank, online blockchain custody accounts, an internet payment gateway, and much more."
+                - generic:
+                  - link "Open Live Account":
+                    - /url: https://trade.multibank.io/register
+                    - button "Open Live Account":
+                      - generic: Open Live Account
+                      - generic:
+                        - img
+                  - link "Download MultiBank.io App":
+                    - /url: /en-AE/
+                    - button "Download MultiBank.io App":
+                      - generic: Download MultiBank.io App
+                      - generic:
+                        - img
+              - img "image"
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - heading "Master the Market with a Champion’s Mindset" [level=2] [ref=e73]
+              - paragraph [ref=e74]: The same discipline, focus, and resilience that defined Khabib’s legacy now drive MultiBank Group’s pursuit of excellence in global finance.
+              - link "Know More" [ref=e76] [cursor=pointer]:
+                - /url: https://www.multibankgroup.com/khabib
+                - button "Know More" [ref=e77]:
+                  - generic [ref=e78]: Know More
+            - img "image" [ref=e79]
+          - generic:
+            - generic:
+              - generic:
+                - heading "WHERE TRADFI MEETS CRYPTO" [level=2]
+                - paragraph:
+                  - text: All-in-one crypto spot exchange. Backed by the financial giant
+                  - strong: MultiBank Group
+                  - text: ", est. in 2005, holding 17+ licenses worldwide."
+                - generic:
+                  - link "Open Live Account":
+                    - /url: https://trade.multibank.io/register
+                    - button "Open Live Account":
+                      - generic: Open Live Account
+                      - generic:
+                        - img
+                  - link "Download MultiBank.io App":
+                    - /url: /en-AE/
+                    - button "Download MultiBank.io App":
+                      - generic: Download MultiBank.io App
+                      - generic:
+                        - img
+              - img "image"
+        - generic [ref=e85]:
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - heading "Securely Build Your Portfolio with MultiBank.io" [level=2] [ref=e92]:
+                - paragraph [ref=e94]: Securely Build Your Portfolio with MultiBank.io
+              - paragraph [ref=e95]: Diversify your crypto portfolio on one of the most regulated platforms in the world, with segregated clients’ funds, advanced security measures and user-friendly tools to help you make informed investment decisions. Rest easy knowing that your assets are safe and secure with us.
+              - link "Get Started" [ref=e97] [cursor=pointer]:
+                - /url: https://trade.multibank.io/
+                - button "Get Started" [ref=e98]:
+                  - generic [ref=e99]: Get Started
+                  - img [ref=e101]
+            - generic [ref=e103]:
+              - img "Coin Image" [ref=e104]
+              - img "Coin Image" [ref=e105]
+              - img "Coin Image" [ref=e106]
+              - img "Coin Image" [ref=e107]
+              - img "Coin Image" [ref=e108]
+              - img "Coin Image" [ref=e109]
+              - img "Coin Image" [ref=e110]
+              - img "Coin Image" [ref=e111]
+              - img "Coin Image" [ref=e112]
+              - img "Coin Image" [ref=e113]
+              - img "Coin Image" [ref=e114]
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - heading "Catch Your Next Trading Opportunity" [level=3] [ref=e117]
+              - link "See More" [ref=e118] [cursor=pointer]:
+                - /url: https://trade.multibank.io/markets
+                - button "See More" [ref=e119]:
+                  - generic [ref=e120]: See More
+                  - img [ref=e122]
+            - generic [ref=e124]:
+              - table [ref=e127]:
+                - rowgroup [ref=e128]:
+                  - row "Pairs Price 24H Change High Low" [ref=e129]:
+                    - columnheader "Pairs" [ref=e130]:
+                      - generic [ref=e131]: Pairs
+                    - columnheader "Price" [ref=e132]:
+                      - generic [ref=e133]: Price
+                    - columnheader "24H Change" [ref=e134]:
+                      - generic [ref=e135]: 24H Change
+                    - columnheader "High" [ref=e136]:
+                      - generic [ref=e137]: High
+                    - columnheader "Low" [ref=e138]:
+                      - generic [ref=e139]: Low
+                - rowgroup [ref=e140]:
+                  - row "BTC BTC/USDT 93206.83 0.49% 94060.31 91745.18" [ref=e141]:
+                    - cell "BTC BTC/USDT" [ref=e142]:
+                      - link "BTC BTC/USDT" [ref=e143] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BTC_USDT
+                        - generic [ref=e144]:
+                          - img "BTC" [ref=e145]
+                          - generic [ref=e147]:
+                            - generic [ref=e148]: BTC/USDT
+                            - img [ref=e149]
+                    - cell "93206.83" [ref=e154]:
+                      - link "93206.83" [ref=e155] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BTC_USDT
+                        - generic [ref=e156]: "93206.83"
+                    - cell "0.49%" [ref=e157]:
+                      - link "0.49%" [ref=e158] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BTC_USDT
+                        - generic [ref=e159]:
+                          - img [ref=e160]
+                          - generic [ref=e162]: 0.49%
+                    - cell "94060.31" [ref=e163]:
+                      - link "94060.31" [ref=e164] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BTC_USDT
+                        - generic [ref=e165]: "94060.31"
+                    - cell "91745.18" [ref=e166]:
+                      - link "91745.18" [ref=e167] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BTC_USDT
+                        - generic [ref=e168]: "91745.18"
+                  - row "ETH ETH/USDT 3183.61 4.33% 3239.5 3034.07" [ref=e169]:
+                    - cell "ETH ETH/USDT" [ref=e170]:
+                      - link "ETH ETH/USDT" [ref=e171] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ETH_USDT
+                        - generic [ref=e172]:
+                          - img "ETH" [ref=e173]
+                          - generic [ref=e175]:
+                            - generic [ref=e176]: ETH/USDT
+                            - img [ref=e177]
+                    - cell "3183.61" [ref=e182]:
+                      - link "3183.61" [ref=e183] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ETH_USDT
+                        - generic [ref=e184]: "3183.61"
+                    - cell "4.33%" [ref=e185]:
+                      - link "4.33%" [ref=e186] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ETH_USDT
+                        - generic [ref=e187]:
+                          - img [ref=e188]
+                          - generic [ref=e190]: 4.33%
+                    - cell "3239.5" [ref=e191]:
+                      - link "3239.5" [ref=e192] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ETH_USDT
+                        - generic [ref=e193]: "3239.5"
+                    - cell "3034.07" [ref=e194]:
+                      - link "3034.07" [ref=e195] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ETH_USDT
+                        - generic [ref=e196]: "3034.07"
+                  - row "SOL SOL/USDT 142.883 0.49% 146.772 138.85" [ref=e197]:
+                    - cell "SOL SOL/USDT" [ref=e198]:
+                      - link "SOL SOL/USDT" [ref=e199] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/SOL_USDT
+                        - generic [ref=e200]:
+                          - img "SOL" [ref=e201]
+                          - generic [ref=e203]:
+                            - generic [ref=e204]: SOL/USDT
+                            - img [ref=e205]
+                    - cell "142.883" [ref=e210]:
+                      - link "142.883" [ref=e211] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/SOL_USDT
+                        - generic [ref=e212]: "142.883"
+                    - cell "0.49%" [ref=e213]:
+                      - link "0.49%" [ref=e214] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/SOL_USDT
+                        - generic [ref=e215]:
+                          - img [ref=e216]
+                          - generic [ref=e218]: 0.49%
+                    - cell "146.772" [ref=e219]:
+                      - link "146.772" [ref=e220] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/SOL_USDT
+                        - generic [ref=e221]: "146.772"
+                    - cell "138.85" [ref=e222]:
+                      - link "138.85" [ref=e223] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/SOL_USDT
+                        - generic [ref=e224]: "138.85"
+                  - row "LINK LINK/USDT 14.535 0.46% 14.934 14.231" [ref=e225]:
+                    - cell "LINK LINK/USDT" [ref=e226]:
+                      - link "LINK LINK/USDT" [ref=e227] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/LINK_USDT
+                        - generic [ref=e228]:
+                          - img "LINK" [ref=e229]
+                          - generic [ref=e232]: LINK/USDT
+                    - cell "14.535" [ref=e233]:
+                      - link "14.535" [ref=e234] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/LINK_USDT
+                        - generic [ref=e235]: "14.535"
+                    - cell "0.46%" [ref=e236]:
+                      - link "0.46%" [ref=e237] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/LINK_USDT
+                        - generic [ref=e238]:
+                          - img [ref=e239]
+                          - generic [ref=e241]: 0.46%
+                    - cell "14.934" [ref=e242]:
+                      - link "14.934" [ref=e243] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/LINK_USDT
+                        - generic [ref=e244]: "14.934"
+                    - cell "14.231" [ref=e245]:
+                      - link "14.231" [ref=e246] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/LINK_USDT
+                        - generic [ref=e247]: "14.231"
+                  - row "TRX TRX/USDT 0.27998 0.14% 0.28123 0.27787" [ref=e248]:
+                    - cell "TRX TRX/USDT" [ref=e249]:
+                      - link "TRX TRX/USDT" [ref=e250] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/TRX_USDT
+                        - generic [ref=e251]:
+                          - img "TRX" [ref=e252]
+                          - generic [ref=e255]: TRX/USDT
+                    - cell "0.27998" [ref=e256]:
+                      - link "0.27998" [ref=e257] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/TRX_USDT
+                        - generic [ref=e258]: "0.27998"
+                    - cell "0.14%" [ref=e259]:
+                      - link "0.14%" [ref=e260] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/TRX_USDT
+                        - generic [ref=e261]:
+                          - img [ref=e262]
+                          - generic [ref=e264]: 0.14%
+                    - cell "0.28123" [ref=e265]:
+                      - link "0.28123" [ref=e266] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/TRX_USDT
+                        - generic [ref=e267]: "0.28123"
+                    - cell "0.27787" [ref=e268]:
+                      - link "0.27787" [ref=e269] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/TRX_USDT
+                        - generic [ref=e270]: "0.27787"
+                  - row "ADA ADA/USDT 0.4479 0.65% 0.4558 0.427" [ref=e271]:
+                    - cell "ADA ADA/USDT" [ref=e272]:
+                      - link "ADA ADA/USDT" [ref=e273] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ADA_USDT
+                        - generic [ref=e274]:
+                          - img "ADA" [ref=e275]
+                          - generic [ref=e278]: ADA/USDT
+                    - cell "0.4479" [ref=e279]:
+                      - link "0.4479" [ref=e280] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ADA_USDT
+                        - generic [ref=e281]: "0.4479"
+                    - cell "0.65%" [ref=e282]:
+                      - link "0.65%" [ref=e283] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ADA_USDT
+                        - generic [ref=e284]:
+                          - img [ref=e285]
+                          - generic [ref=e287]: 0.65%
+                    - cell "0.4558" [ref=e288]:
+                      - link "0.4558" [ref=e289] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ADA_USDT
+                        - generic [ref=e290]: "0.4558"
+                    - cell "0.427" [ref=e291]:
+                      - link "0.427" [ref=e292] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/ADA_USDT
+                        - generic [ref=e293]: "0.427"
+                  - row "BCH BCH/USDT 586.7 1.07% 606.8 575.3" [ref=e294]:
+                    - cell "BCH BCH/USDT" [ref=e295]:
+                      - link "BCH BCH/USDT" [ref=e296] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BCH_USDT
+                        - generic [ref=e297]:
+                          - img "BCH" [ref=e298]
+                          - generic [ref=e301]: BCH/USDT
+                    - cell "586.7" [ref=e302]:
+                      - link "586.7" [ref=e303] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BCH_USDT
+                        - generic [ref=e304]: "586.7"
+                    - cell "1.07%" [ref=e305]:
+                      - link "1.07%" [ref=e306] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BCH_USDT
+                        - generic [ref=e307]:
+                          - img [ref=e308]
+                          - generic [ref=e310]: 1.07%
+                    - cell "606.8" [ref=e311]:
+                      - link "606.8" [ref=e312] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BCH_USDT
+                        - generic [ref=e313]: "606.8"
+                    - cell "575.3" [ref=e314]:
+                      - link "575.3" [ref=e315] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/BCH_USDT
+                        - generic [ref=e316]: "575.3"
+                  - row "XRP XRP/USDT 2.1645 1.11% 2.2146 2.1459" [ref=e317]:
+                    - cell "XRP XRP/USDT" [ref=e318]:
+                      - link "XRP XRP/USDT" [ref=e319] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/XRP_USDT
+                        - generic [ref=e320]:
+                          - img "XRP" [ref=e321]
+                          - generic [ref=e324]: XRP/USDT
+                    - cell "2.1645" [ref=e325]:
+                      - link "2.1645" [ref=e326] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/XRP_USDT
+                        - generic [ref=e327]: "2.1645"
+                    - cell "1.11%" [ref=e328]:
+                      - link "1.11%" [ref=e329] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/XRP_USDT
+                        - generic [ref=e330]:
+                          - img [ref=e331]
+                          - generic [ref=e333]: 1.11%
+                    - cell "2.2146" [ref=e334]:
+                      - link "2.2146" [ref=e335] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/XRP_USDT
+                        - generic [ref=e336]: "2.2146"
+                    - cell "2.1459" [ref=e337]:
+                      - link "2.1459" [ref=e338] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/XRP_USDT
+                        - generic [ref=e339]: "2.1459"
+                  - row "LTC LTC/USDT 85.043 0.34% 86.802 83.786" [ref=e340] [cursor=pointer]:
+                    - cell "LTC LTC/USDT" [ref=e341]:
+                      - link "LTC LTC/USDT" [ref=e342]:
+                        - /url: https://trade.multibank.io/trade/LTC_USDT
+                        - generic [ref=e343]:
+                          - img "LTC" [ref=e344]
+                          - generic [ref=e347]: LTC/USDT
+                    - cell "85.043" [ref=e348]:
+                      - link "85.043" [ref=e349]:
+                        - /url: https://trade.multibank.io/trade/LTC_USDT
+                        - generic [ref=e350]: "85.043"
+                    - cell "0.34%" [ref=e351]:
+                      - link "0.34%" [ref=e352]:
+                        - /url: https://trade.multibank.io/trade/LTC_USDT
+                        - generic [ref=e353]:
+                          - img [ref=e354]
+                          - generic [ref=e356]: 0.34%
+                    - cell "86.802" [ref=e357]:
+                      - link "86.802" [ref=e358]:
+                        - /url: https://trade.multibank.io/trade/LTC_USDT
+                        - generic [ref=e359]: "86.802"
+                    - cell "83.786" [ref=e360]:
+                      - link "83.786" [ref=e361]:
+                        - /url: https://trade.multibank.io/trade/LTC_USDT
+                        - generic [ref=e362]: "83.786"
+                  - row "DOGE DOGE/USDT 0.149435 0.87% 0.153176 0.14646" [ref=e363]:
+                    - cell "DOGE DOGE/USDT" [ref=e364]:
+                      - link "DOGE DOGE/USDT" [ref=e365] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOGE_USDT
+                        - generic [ref=e366]:
+                          - img "DOGE" [ref=e367]
+                          - generic [ref=e370]: DOGE/USDT
+                    - cell "0.149435" [ref=e371]:
+                      - link "0.149435" [ref=e372] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOGE_USDT
+                        - generic [ref=e373]: "0.149435"
+                    - cell "0.87%" [ref=e374]:
+                      - link "0.87%" [ref=e375] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOGE_USDT
+                        - generic [ref=e376]:
+                          - img [ref=e377]
+                          - generic [ref=e379]: 0.87%
+                    - cell "0.153176" [ref=e380]:
+                      - link "0.153176" [ref=e381] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOGE_USDT
+                        - generic [ref=e382]: "0.153176"
+                    - cell "0.14646" [ref=e383]:
+                      - link "0.14646" [ref=e384] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOGE_USDT
+                        - generic [ref=e385]: "0.14646"
+                  - row "DOT DOT/USDT 2.3384 1.33% 2.4 2.2455" [ref=e386]:
+                    - cell "DOT DOT/USDT" [ref=e387]:
+                      - link "DOT DOT/USDT" [ref=e388] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOT_USDT
+                        - generic [ref=e389]:
+                          - img "DOT" [ref=e390]
+                          - generic [ref=e393]: DOT/USDT
+                    - cell "2.3384" [ref=e394]:
+                      - link "2.3384" [ref=e395] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOT_USDT
+                        - generic [ref=e396]: "2.3384"
+                    - cell "1.33%" [ref=e397]:
+                      - link "1.33%" [ref=e398] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOT_USDT
+                        - generic [ref=e399]:
+                          - img [ref=e400]
+                          - generic [ref=e402]: 1.33%
+                    - cell "2.4" [ref=e403]:
+                      - link "2.4" [ref=e404] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOT_USDT
+                        - generic [ref=e405]: "2.4"
+                    - cell "2.2455" [ref=e406]:
+                      - link "2.2455" [ref=e407] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/DOT_USDT
+                        - generic [ref=e408]: "2.2455"
+                  - row "AVAX AVAX/USDT 14.723 4.08% 15.078 13.904" [ref=e409]:
+                    - cell "AVAX AVAX/USDT" [ref=e410]:
+                      - link "AVAX AVAX/USDT" [ref=e411] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/AVAX_USDT
+                        - generic [ref=e412]:
+                          - img "AVAX" [ref=e413]
+                          - generic [ref=e416]: AVAX/USDT
+                    - cell "14.723" [ref=e417]:
+                      - link "14.723" [ref=e418] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/AVAX_USDT
+                        - generic [ref=e419]: "14.723"
+                    - cell "4.08%" [ref=e420]:
+                      - link "4.08%" [ref=e421] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/AVAX_USDT
+                        - generic [ref=e422]:
+                          - img [ref=e423]
+                          - generic [ref=e425]: 4.08%
+                    - cell "15.078" [ref=e426]:
+                      - link "15.078" [ref=e427] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/AVAX_USDT
+                        - generic [ref=e428]: "15.078"
+                    - cell "13.904" [ref=e429]:
+                      - link "13.904" [ref=e430] [cursor=pointer]:
+                        - /url: https://trade.multibank.io/trade/AVAX_USDT
+                        - generic [ref=e431]: "13.904"
+              - generic [ref=e432]:
+                - generic [ref=e433]:
+                  - generic [ref=e434]: Top Gainers
+                  - table [ref=e436]:
+                    - rowgroup [ref=e437]:
+                      - row "ETH ETH/USDT 3183.61 4.33%" [ref=e438]:
+                        - cell "ETH ETH/USDT" [ref=e439]:
+                          - link "ETH ETH/USDT" [ref=e440] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/ETH_USDT
+                            - generic [ref=e441]:
+                              - img "ETH" [ref=e442]
+                              - generic [ref=e445]: ETH/USDT
+                        - cell "3183.61" [ref=e446]:
+                          - link "3183.61" [ref=e447] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/ETH_USDT
+                            - generic [ref=e448]: "3183.61"
+                        - cell "4.33%" [ref=e449]:
+                          - link "4.33%" [ref=e450] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/ETH_USDT
+                            - generic [ref=e451]:
+                              - img [ref=e452]
+                              - generic [ref=e454]: 4.33%
+                      - row "AVAX AVAX/USDT 14.723 4.08%" [ref=e455]:
+                        - cell "AVAX AVAX/USDT" [ref=e456]:
+                          - link "AVAX AVAX/USDT" [ref=e457] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/AVAX_USDT
+                            - generic [ref=e458]:
+                              - img "AVAX" [ref=e459]
+                              - generic [ref=e462]: AVAX/USDT
+                        - cell "14.723" [ref=e463]:
+                          - link "14.723" [ref=e464] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/AVAX_USDT
+                            - generic [ref=e465]: "14.723"
+                        - cell "4.08%" [ref=e466]:
+                          - link "4.08%" [ref=e467] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/AVAX_USDT
+                            - generic [ref=e468]:
+                              - img [ref=e469]
+                              - generic [ref=e471]: 4.08%
+                      - row "DOT DOT/USDT 2.3384 1.33%" [ref=e472]:
+                        - cell "DOT DOT/USDT" [ref=e473]:
+                          - link "DOT DOT/USDT" [ref=e474] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/DOT_USDT
+                            - generic [ref=e475]:
+                              - img "DOT" [ref=e476]
+                              - generic [ref=e479]: DOT/USDT
+                        - cell "2.3384" [ref=e480]:
+                          - link "2.3384" [ref=e481] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/DOT_USDT
+                            - generic [ref=e482]: "2.3384"
+                        - cell "1.33%" [ref=e483]:
+                          - link "1.33%" [ref=e484] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/DOT_USDT
+                            - generic [ref=e485]:
+                              - img [ref=e486]
+                              - generic [ref=e488]: 1.33%
+                      - row "BCH BCH/USDT 586.7 1.07%" [ref=e489]:
+                        - cell "BCH BCH/USDT" [ref=e490]:
+                          - link "BCH BCH/USDT" [ref=e491] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/BCH_USDT
+                            - generic [ref=e492]:
+                              - img "BCH" [ref=e493]
+                              - generic [ref=e496]: BCH/USDT
+                        - cell "586.7" [ref=e497]:
+                          - link "586.7" [ref=e498] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/BCH_USDT
+                            - generic [ref=e499]: "586.7"
+                        - cell "1.07%" [ref=e500]:
+                          - link "1.07%" [ref=e501] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/BCH_USDT
+                            - generic [ref=e502]:
+                              - img [ref=e503]
+                              - generic [ref=e505]: 1.07%
+                      - row "ETC ETC/USDT 14.03 1.01%" [ref=e506]:
+                        - cell "ETC ETC/USDT" [ref=e507]:
+                          - link "ETC ETC/USDT" [ref=e508] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/ETC_USDT
+                            - generic [ref=e509]:
+                              - img "ETC" [ref=e510]
+                              - generic [ref=e513]: ETC/USDT
+                        - cell "14.03" [ref=e514]:
+                          - link "14.03" [ref=e515] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/ETC_USDT
+                            - generic [ref=e516]: "14.03"
+                        - cell "1.01%" [ref=e517]:
+                          - link "1.01%" [ref=e518] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/ETC_USDT
+                            - generic [ref=e519]:
+                              - img [ref=e520]
+                              - generic [ref=e522]: 1.01%
+                - generic [ref=e523]:
+                  - generic [ref=e524]: Top Losers
+                  - table [ref=e526]:
+                    - rowgroup [ref=e527]:
+                      - row "MBG MBG/USDT 0.44 8.33%" [ref=e528]:
+                        - cell "MBG MBG/USDT" [ref=e529]:
+                          - link "MBG MBG/USDT" [ref=e530] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/MBG_USDT
+                            - generic [ref=e531]:
+                              - img "MBG" [ref=e532]
+                              - generic [ref=e535]: MBG/USDT
+                        - cell "0.44" [ref=e536]:
+                          - link "0.44" [ref=e537] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/MBG_USDT
+                            - generic [ref=e538]: "0.44"
+                        - cell "8.33%" [ref=e539]:
+                          - link "8.33%" [ref=e540] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/MBG_USDT
+                            - generic [ref=e541]:
+                              - img [ref=e542]
+                              - generic [ref=e544]: 8.33%
+                      - row "COMP COMP/USDT 34.7 1.61%" [ref=e545]:
+                        - cell "COMP COMP/USDT" [ref=e546]:
+                          - link "COMP COMP/USDT" [ref=e547] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/COMP_USDT
+                            - generic [ref=e548]:
+                              - img "COMP" [ref=e549]
+                              - generic [ref=e552]: COMP/USDT
+                        - cell "34.7" [ref=e553]:
+                          - link "34.7" [ref=e554] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/COMP_USDT
+                            - generic [ref=e555]: "34.7"
+                        - cell "1.61%" [ref=e556]:
+                          - link "1.61%" [ref=e557] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/COMP_USDT
+                            - generic [ref=e558]:
+                              - img [ref=e559]
+                              - generic [ref=e561]: 1.61%
+                      - row "POL POL/USDT 0.1281 1.39%" [ref=e562]:
+                        - cell "POL POL/USDT" [ref=e563]:
+                          - link "POL POL/USDT" [ref=e564] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/POL_USDT
+                            - generic [ref=e565]:
+                              - img "POL" [ref=e566]
+                              - generic [ref=e569]: POL/USDT
+                        - cell "0.1281" [ref=e570]:
+                          - link "0.1281" [ref=e571] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/POL_USDT
+                            - generic [ref=e572]: "0.1281"
+                        - cell "1.39%" [ref=e573]:
+                          - link "1.39%" [ref=e574] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/POL_USDT
+                            - generic [ref=e575]:
+                              - img [ref=e576]
+                              - generic [ref=e578]: 1.39%
+                      - row "XDC XDC/USDT 0.05139 1.25%" [ref=e579]:
+                        - cell "XDC XDC/USDT" [ref=e580]:
+                          - link "XDC XDC/USDT" [ref=e581] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/XDC_USDT
+                            - generic [ref=e582]:
+                              - img "XDC" [ref=e583]
+                              - generic [ref=e586]: XDC/USDT
+                        - cell "0.05139" [ref=e587]:
+                          - link "0.05139" [ref=e588] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/XDC_USDT
+                            - generic [ref=e589]: "0.05139"
+                        - cell "1.25%" [ref=e590]:
+                          - link "1.25%" [ref=e591] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/XDC_USDT
+                            - generic [ref=e592]:
+                              - img [ref=e593]
+                              - generic [ref=e595]: 1.25%
+                      - row "XRP XRP/USDT 2.1645 1.11%" [ref=e596]:
+                        - cell "XRP XRP/USDT" [ref=e597]:
+                          - link "XRP XRP/USDT" [ref=e598] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/XRP_USDT
+                            - generic [ref=e599]:
+                              - img "XRP" [ref=e600]
+                              - generic [ref=e603]: XRP/USDT
+                        - cell "2.1645" [ref=e604]:
+                          - link "2.1645" [ref=e605] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/XRP_USDT
+                            - generic [ref=e606]: "2.1645"
+                        - cell "1.11%" [ref=e607]:
+                          - link "1.11%" [ref=e608] [cursor=pointer]:
+                            - /url: https://trade.multibank.io/trade/XRP_USDT
+                            - generic [ref=e609]:
+                              - img [ref=e610]
+                              - generic [ref=e612]: 1.11%
+          - generic [ref=e615]:
+            - generic [ref=e617]:
+              - img [ref=e618] [cursor=pointer]
+              - generic [ref=e621]:
+                - heading "The Fastest Way to Trade" [level=2] [ref=e622]:
+                  - paragraph [ref=e624]: The Fastest Way to Trade
+                - paragraph [ref=e625]: Experience lightning-fast trading speed with MultiBank io, and buy and sell Bitcoin, Ethereum and other cryptocurrencies instantly using your preferred payment method. With 40 nanosecond trading execution speed and the ability to handle 9 million+ trades a second, our user-friendly platform is perfect for both beginners and advanced traders alike.
+              - generic [ref=e626]:
+                - img "Fastest Way 1" [ref=e627]
+                - img "Fastest Way 2" [ref=e629]
+            - generic [ref=e631]:
+              - generic [ref=e632]:
+                - heading "Credit Card & Bank Transfers" [level=2] [ref=e633]:
+                  - paragraph [ref=e635]: Credit Card & Bank Transfers
+                - paragraph [ref=e636]: At MultiBank io you can deposit USD and EURO, into your Crypto Account using Credit Card or Bank Transfer. Seamlessly buy your favorite Cryptocurrency and trade FIAT/CRYPTO pairings on our exchange platform
+                - img "Logo Payment Methods No Apple" [ref=e638]
+              - generic [ref=e640]:
+                - img "Cards 1[1]" [ref=e641]
+                - img "Frame 43063[1]" [ref=e643]
+            - generic [ref=e645]:
+              - img [ref=e646] [cursor=pointer]
+              - generic [ref=e649]:
+                - heading "Panic Sell" [level=2] [ref=e650]:
+                  - paragraph [ref=e652]: Panic Sell
+                - paragraph [ref=e653]: Quickly sell all your low value cryptocurrencies to an asset of your choice.
+              - generic [ref=e654]:
+                - img "Panic Sell" [ref=e655]
+                - generic [ref=e656]:
+                  - img "Img Alert" [ref=e657]
+                  - img "Img 4pills" [ref=e658]
+            - generic [ref=e660]:
+              - generic [ref=e662]:
+                - heading "Convert" [level=2] [ref=e663]:
+                  - paragraph [ref=e665]: Convert
+                - generic [ref=e666]:
+                  - strong [ref=e667]: Simple, secure, and instant.
+                  - text: Seamlessly convert one cryptocurrency to another — anytime, anywhere, with zero fees. Enjoy guaranteed rates and hassle-free conversions across any trading pair.
+              - img "Frame 9306[1]" [ref=e669]
+        - generic [ref=e671]:
+          - generic [ref=e672]:
+            - heading "CRYPTO TRADING" [level=5] [ref=e673]
+            - heading "Our Advantages" [level=2] [ref=e674]
+            - paragraph [ref=e675]: At MultiBank, we put our clients first, offering personalized support and innovative trading solutions
+          - generic [ref=e676]:
+            - generic [ref=e679]:
+              - generic [ref=e681]:
+                - generic [ref=e683]: ‌
+                - img "Cards 1" [ref=e684]
+              - generic [ref=e685]:
+                - heading "Fiat On and Off Ramp" [level=3] [ref=e686]
+                - paragraph [ref=e687]: Seamlessly convert between FIAT and crypto with MultiBank io's wide range of payment options, including bank transfers, Debit and Credit Cards, and more.
+            - generic [ref=e690]:
+              - generic [ref=e692]:
+                - generic [ref=e694]: ‌
+                - img "Cards 1[1]" [ref=e695]
+              - generic [ref=e696]:
+                - heading "Heavily Regulated" [level=3] [ref=e697]
+                - paragraph [ref=e698]: MultiBank Group is comprised of several entities that are heavily regulated across 5 continents by 17+ financial regulators
+            - generic [ref=e701]:
+              - generic [ref=e703]:
+                - generic [ref=e705]: ‌
+                - img "Cards 1 (1)" [ref=e706]
+              - generic [ref=e707]:
+                - heading "Security of Funds" [level=3] [ref=e708]
+                - paragraph [ref=e709]: Secure digital asset custody platform with multi-party computation (MPC)
+            - generic [ref=e712]:
+              - generic [ref=e714]:
+                - generic [ref=e716]: ‌
+                - img "Frame 43112" [ref=e717]
+              - generic [ref=e718]:
+                - heading "Crypto Currencies" [level=3] [ref=e719]
+                - paragraph [ref=e720]: Buy and sell your selection of over 20 of the top crypto currencies
+            - generic [ref=e723]:
+              - generic [ref=e725]:
+                - generic [ref=e727]: ‌
+                - img "Rad" [ref=e728]
+              - generic [ref=e729]:
+                - heading "Customer Service" [level=3] [ref=e730]
+                - paragraph [ref=e731]: Enjoy assistance from our 24/7/365 customer service desk
+        - generic [ref=e733]:
+          - generic [ref=e735]:
+            - generic [ref=e737]: ‌
+            - img "Img Io Spot Trading[1]" [ref=e738]
+            - generic [ref=e739]:
+              - generic [ref=e741]: ‌
+              - img "Frame 43213" [ref=e742]
+          - generic [ref=e744]:
+            - generic [ref=e745]: Spot Trading
+            - heading "Access the most liquid crypto market in the world" [level=3] [ref=e746]
+            - paragraph [ref=e747]: MultiBank io will offer regulated cryptocurrency spot trading through our Australian division "MEX Digital Pty Ltd" which is regulated by the Australian Securities & Investments Commission (ASIC).
+            - list [ref=e748]:
+              - listitem [ref=e749]:
+                - generic [ref=e750]:
+                  - generic [ref=e752]: ‌
+                  - img "Vector" [ref=e753]
+                - paragraph [ref=e754]: Low fees & tight spreads
+              - listitem [ref=e755]:
+                - generic [ref=e756]:
+                  - generic [ref=e758]: ‌
+                  - img "Vector" [ref=e759]
+                - paragraph [ref=e760]: 90+ trading pairs
+              - listitem [ref=e761]:
+                - generic [ref=e762]:
+                  - generic [ref=e764]: ‌
+                  - img "Vector" [ref=e765]
+                - paragraph [ref=e766]: Buy bitcoin online via bank transfer with USD or EUR
+              - listitem [ref=e767]:
+                - generic [ref=e768]:
+                  - generic [ref=e770]: ‌
+                  - img "Vector" [ref=e771]
+                - paragraph [ref=e772]: BTC, ETH, LTC, BCH, XRP and many more on the MultiBank io Crypto Exchange
+            - link "Start Now" [ref=e774] [cursor=pointer]:
+              - /url: https://trade.multibank.io/
+              - button "Start Now" [ref=e775]:
+                - generic [ref=e776]: Start Now
+        - generic [ref=e778]:
+          - generic [ref=e780]:
+            - generic [ref=e782]: ‌
+            - img "Img Io Spot Trading[1]" [ref=e783]
+            - generic [ref=e784]:
+              - generic [ref=e786]: ‌
+              - img "Frame 43213" [ref=e787]
+          - generic [ref=e789]:
+            - img "multibankIoRWA" [ref=e791]
+            - heading [level=3]
+            - paragraph [ref=e792]: MultiBank.io RWA is bringing $10 billion in tokenized real-world assets to market, starting with $3 billion in ultra-luxury real estate via MAG. Our secure and regulated marketplace offers 24/7 access to fractional, income-generating assets and up to 8% APY with daily payouts. Powered by the $MBG token for staking, fee discounts, and deflationary utility.
+            - link "Start Now" [ref=e794] [cursor=pointer]:
+              - /url: /en-AE/rwa
+              - button "Start Now" [ref=e795]:
+                - generic [ref=e796]: Start Now
+      - contentinfo [ref=e798]:
+        - generic [ref=e800]:
+          - img "World Map Bg"
+          - generic [ref=e801]:
+            - generic [ref=e802]: Start Trading Now
+            - generic [ref=e803]: Join the biggest regulated crypto exchange on the market
+            - link "Explore our platform" [ref=e804] [cursor=pointer]:
+              - /url: https://trade.multibank.io/trade/BTC_USD
+              - button "Explore our platform" [ref=e805]:
+                - generic [ref=e806]: Explore our platform
+        - generic [ref=e807]:
+          - generic [ref=e808]:
+            - generic [ref=e809]:
+              - generic [ref=e810]:
+                - generic [ref=e812]: ‌
+                - img "Multi Bank Io Gold" [ref=e813]
+              - heading "Buy and Withdraw Crypto Instantly" [level=2] [ref=e814]
+              - paragraph [ref=e815]: Instant Buy tool – the fastest way to buy bitcoin and altcoins. Withdraw your funds to a card, bank account or crypto wallet with a few simple clicks.
+              - generic [ref=e816]:
+                - paragraph [ref=e817]: "Assured by:"
+                - link "Audited by Hacken" [ref=e818] [cursor=pointer]:
+                  - /url: https://hacken.io/audits/multibank-io/pt-multibank-io-web-feb2024
+                  - img "Audited by Hacken" [ref=e819]
+            - generic [ref=e820]:
+              - generic [ref=e821]:
+                - heading "Features" [level=2] [ref=e822]: Features
+                - generic [ref=e824]:
+                  - link "Spot Exchange" [ref=e825] [cursor=pointer]:
+                    - /url: /en-AE/features/spot-exchange
+                    - heading "Spot Exchange" [level=2] [ref=e826]
+                  - link "Institutional" [ref=e827] [cursor=pointer]:
+                    - /url: /en-AE/features/institutional
+                    - heading "Institutional" [level=2] [ref=e828]
+                  - link "Buy & Sell" [ref=e829] [cursor=pointer]:
+                    - /url: /en-AE/features/instant-buy
+                    - heading "Buy & Sell" [level=2] [ref=e830]
+              - generic [ref=e831]:
+                - heading "Legal" [level=2] [ref=e832]: Legal
+                - generic [ref=e834]:
+                  - link "Cookie Policy" [ref=e835] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/cookie-policy
+                    - heading "Cookie Policy" [level=2] [ref=e836]
+                  - link "Terms & Conditions" [ref=e837] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/terms-and-conditions
+                    - heading "Terms & Conditions" [level=2] [ref=e838]
+                  - link "Disclaimer" [ref=e839] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/disclaimer
+                    - heading "Disclaimer" [level=2] [ref=e840]
+                  - link "Code of Conduct" [ref=e841] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/code-of-conduct
+                    - heading "Code of Conduct" [level=2] [ref=e842]
+                  - link "Public Complaint Policy" [ref=e843] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/complaint-policy
+                    - heading "Public Complaint Policy" [level=2] [ref=e844]
+                  - link "Public Disclosure" [ref=e845] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/public-disclosure
+                    - heading "Public Disclosure" [level=2] [ref=e846]
+                  - link "Privacy Policy" [ref=e847] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/privacy-policy
+                    - heading "Privacy Policy" [level=2] [ref=e848]
+                  - link "Broker Dealer Services" [ref=e849] [cursor=pointer]:
+                    - /url: /en-AE/legal/broker-dealer-services
+                    - heading "Broker Dealer Services" [level=2] [ref=e850]
+                  - link "Exchange Services" [ref=e851] [cursor=pointer]:
+                    - /url: /en-AE/legal/exchange-services
+                    - heading "Exchange Services" [level=2] [ref=e852]
+                  - link "Client Agreement" [ref=e853] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/client-agreement
+                    - heading "Client Agreement" [level=2] [ref=e854]
+                  - link "VA Standards" [ref=e855] [cursor=pointer]:
+                    - /url: /en-AE/about/gcc/virtual-asset-standards
+                    - heading "VA Standards" [level=2] [ref=e856]
+                  - link "Spot Fees" [ref=e857] [cursor=pointer]:
+                    - /url: /en-AE/support/faq/trading/trading-fees
+                    - heading "Spot Fees" [level=2] [ref=e858]
+              - generic [ref=e859]:
+                - heading "Support" [level=2] [ref=e860]: Support
+                - link "FAQ" [ref=e863] [cursor=pointer]:
+                  - /url: /en-AE/support/faq
+                  - heading "FAQ" [level=2] [ref=e864]
+              - generic [ref=e865]:
+                - heading "About Us" [level=2] [ref=e866]: About Us
+                - link "Blog" [ref=e869] [cursor=pointer]:
+                  - /url: /en-AE/about/blog
+                  - heading "Blog" [level=2] [ref=e870]
+          - generic [ref=e871]:
+            - generic [ref=e872]:
+              - link "‌ Facebook" [ref=e873] [cursor=pointer]:
+                - /url: https://www.facebook.com/multibankgroup/
+                - generic [ref=e875]: ‌
+                - img "Facebook" [ref=e876]
+              - link "‌ Instagram" [ref=e877] [cursor=pointer]:
+                - /url: https://www.instagram.com/multibank_group/
+                - generic [ref=e879]: ‌
+                - img "Instagram" [ref=e880]
+              - link "‌ X Twitter Icon" [ref=e881] [cursor=pointer]:
+                - /url: https://x.com/multibankgroup
+                - generic [ref=e883]: ‌
+                - img "X Twitter Icon" [ref=e884]
+              - link "‌ LinkedIn" [ref=e885] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/multibankgroup/
+                - generic [ref=e887]: ‌
+                - img "LinkedIn" [ref=e888]
+              - link "‌ Telegram" [ref=e889] [cursor=pointer]:
+                - /url: https://t.me/MultiBank_io
+                - generic [ref=e891]: ‌
+                - img "Telegram" [ref=e892]
+              - link "‌ Telegramannouncment" [ref=e893] [cursor=pointer]:
+                - /url: https://t.me/MultiBankio_Announcements
+                - generic [ref=e895]: ‌
+                - img "Telegramannouncment" [ref=e896]
+            - generic [ref=e897]: 2025 Copyright. All Rights Reserved. MultiBank io.
+          - separator [ref=e898]
+          - generic [ref=e899]:
+            - generic [ref=e900]:
+              - paragraph [ref=e901]: MEX Digital FZE, is a Virtual Asset Service Provider (VASP) registered in the UAE and has received Operational Approval from the Virtual Asset Regulatory Authority (VARA) to provide Spot Broker-Dealer and Spot Exchange services.
+              - heading "We accept:" [level=4] [ref=e902]
+              - generic [ref=e903]:
+                - generic [ref=e905]: ‌
+                - img "VisaMasterCard" [ref=e906]
+                - generic [ref=e908]: ‌
+                - img "UnionPay" [ref=e909]
+                - generic [ref=e911]: ‌
+                - img "PCI" [ref=e912]
+            - separator [ref=e913]
+            - generic [ref=e915]:
+              - text: "Risk Warning: Cryptocurrency trading may not be suitable for everyone as there are risks involved, therefore, seek professional financial advice from a suitable and licensed financial advisor before investing. Any advice contained in this email is general advice only and has been prepared without taking into account your objectives, financial situation or needs. Before acting on any advice in this email, MEX Digital recommends that you consider whether it is appropriate for your circumstances."
+              - text: "General Warning: The contents of this email are strictly confidential. If you are not the intended user and have received this email in error, please notify us and delete it from your system immediately because any use, including copying and disclosure of this email including any attachments is unauthorised and prohibited."
+              - text: We are authorised by the Virtual Assets Regulatory Authority (“VARA”) with the VARA registration number VL/24/06/001 to carry on the financial services of (i) exchange; (ii) broker dealer; in and from DWTC. The complete statement of what we are authorised to carry on, which may change from time to time, can be found on our listing on the VARA Register.
+  - alert [ref=e916]
+  - iframe [ref=e918]:
+    - main [ref=f18e2]:
+      - button "Open LiveChat chat widget" [ref=f18e6] [cursor=pointer]:
+        - img [ref=f18e8]
+```

@@ -1,7 +1,9 @@
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator, expect } from '@playwright/test';
 import { BasePage } from './BasePage';
+import { WhyMultiBankPage } from './WhyMultiBankPage';
 import navTexts from '../../data/navigation.json';
 import spotData from '../../data/spotSection.json';
+import contentData from '../../data/contentValidation.json';
 
 export class HomePage extends BasePage {
     //navigation
@@ -29,6 +31,15 @@ export class HomePage extends BasePage {
     readonly highHeader: Locator;
     readonly lowHeader: Locator;
     readonly last7DaysHeader: Locator;
+
+    //content validation
+    readonly downloadSectionTitle: Locator;
+    // readonly appStoreLink: Locator;
+    // readonly googlePlayLink: Locator;
+    readonly bannerCarousel: Locator;
+
+    //Why Multibank
+    readonly whyMultibankOption: Locator;
     
     constructor(page: Page) {
         super(page);
@@ -59,6 +70,15 @@ export class HomePage extends BasePage {
         this.highHeader = this.page.locator(`#${spotData.tableColumns.high_id}`).first();
         this.lowHeader = this.page.locator(`#${spotData.tableColumns.low_id}`).first();
         this.last7DaysHeader = this.page.locator(`#${spotData.tableColumns.last7Days_id}`).first();
+
+        //content validation locators
+        this.downloadSectionTitle = this.page.getByRole('heading', { name: contentData.homepage.downloadSection.title });
+        // this.appStoreLink = this.page.getByRole('link', { name: new RegExp(contentData.homepage.downloadSection.links[0].text) });
+        // this.googlePlayLink = this.page.getByRole('link', { name: new RegExp(contentData.homepage.downloadSection.links[1].text) });
+        this.bannerCarousel = this.page.locator('div.style_wrapper__ag9kn').filter({ has: this.page.getByText(contentData.homepage.marketingBanner.texts[0]) }).first();
+
+        //Why Multibank locators
+        this.whyMultibankOption = this.page.getByText(contentData.aboutUs.whyMultibank.menuText);
     
     }
 
@@ -109,5 +129,28 @@ export class HomePage extends BasePage {
 
     async getRowCount(): Promise<number> {
         return await this.getTableRows().count();
+    }
+
+    async verifyMarketingBannersExist() {
+        const bannerTexts = contentData.homepage.marketingBanner.texts;
+        for (const text of bannerTexts) {
+            const banner = this.bannerCarousel.getByText(text).first();
+            await expect(banner).toBeVisible();
+        }
+    }
+
+    getDownloadLink(text: string): Locator {
+        return this.page.getByRole('link').filter({ hasText: text });
+    }
+
+    async openAboutUsMenu() {
+        await this.aboutus.click();
+    }
+
+    async clickWhyMultibank() {
+        await this.openAboutUsMenu();
+        await this.verifyElementsVisible([this.whyMultibankOption]);
+        await this.clickAndVerifyNavigation(this.whyMultibankOption, new RegExp(contentData.aboutUs.whyMultibank.urlContains));
+        return new WhyMultiBankPage(this.page);
     }
 }

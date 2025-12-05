@@ -1,0 +1,356 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: https://trade.multibank.io/
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - link "Dashboard" [ref=e10] [cursor=pointer]:
+              - /url: /
+            - link "Markets" [ref=e11] [cursor=pointer]:
+              - /url: /markets
+            - generic [ref=e15]:
+              - text: Trade
+              - img [ref=e17]
+            - generic [ref=e22]:
+              - text: Features
+              - img [ref=e24]
+            - generic [ref=e29]:
+              - text: About Us
+              - img [ref=e31]
+            - generic [ref=e36]:
+              - text: Support
+              - img [ref=e38]
+          - generic [ref=e45]:
+            - img [ref=e47]
+            - text: EN
+            - img [ref=e50]
+        - button [ref=e53]:
+          - generic:
+            - img
+    - generic [ref=e60]:
+      - generic [ref=e62]:
+        - generic [ref=e64]:
+          - heading "Pay Trading Fees with MBG" [level=5] [ref=e65]
+          - paragraph [ref=e66]: Instead of paying trading fees in base or quote currency, pay an equivalent amount with MBG.
+          - generic [ref=e67]:
+            - text: Learn More
+            - img [ref=e69]
+        - generic [ref=e71]:
+          - heading [level=1]
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - generic [ref=e75]:
+                - button "Spot" [ref=e77]
+                - generic [ref=e78]:
+                  - generic [ref=e81]:
+                    - button "Favorites" [ref=e82]:
+                      - text: Favorites
+                      - img [ref=e84]
+                    - button "All" [active] [ref=e86]
+                  - generic [ref=e88]:
+                    - img [ref=e90]
+                    - textbox "Search Pairs" [ref=e92]
+              - table [ref=e98]:
+                - rowgroup [ref=e99]:
+                  - row "Pair Max Leverage Short Long Charts Change 24h" [ref=e100]:
+                    - columnheader [ref=e101]
+                    - columnheader "Pair" [ref=e102]:
+                      - generic [ref=e104]: Pair
+                    - columnheader "Max Leverage" [ref=e105]:
+                      - generic [ref=e107]: Max Leverage
+                    - columnheader "Short" [ref=e108]:
+                      - generic [ref=e110]: Short
+                    - columnheader "Long" [ref=e111]:
+                      - generic [ref=e113]: Long
+                    - columnheader "Charts" [ref=e114]:
+                      - generic [ref=e115]: Charts
+                    - columnheader "Change 24h" [ref=e116]:
+                      - generic [ref=e117]:
+                        - generic [ref=e118]: Change 24h
+                        - generic:
+                          - img
+                - rowgroup [ref=e120]:
+                  - row [ref=e121]:
+                    - cell [ref=e122]
+                    - cell [ref=e123]
+                    - cell [ref=e124]
+                    - cell [ref=e125]
+                    - cell [ref=e126]
+                    - cell [ref=e127]
+                    - cell [ref=e128]
+                  - row [ref=e129]:
+                    - cell [ref=e130]
+                    - cell [ref=e131]
+                    - cell [ref=e132]
+                    - cell [ref=e133]
+                    - cell [ref=e134]
+                    - cell [ref=e135]
+                    - cell [ref=e136]
+                  - row [ref=e137]:
+                    - cell [ref=e138]
+            - generic [ref=e139]:
+              - generic [ref=e141]:
+                - heading "Pay Trading Fees with MBG" [level=5] [ref=e142]
+                - paragraph [ref=e143]: Instead of paying trading fees in base or quote currency, pay an equivalent amount with MBG.
+                - generic [ref=e144]:
+                  - text: Learn More
+                  - img [ref=e146]
+              - generic [ref=e149]:
+                - heading "Market Sentiment" [level=4] [ref=e150]
+                - generic [ref=e151]:
+                  - img [ref=e152]
+                  - generic [ref=e166]: 23Extreme Fear Index
+              - generic [ref=e167]:
+                - generic [ref=e170]:
+                  - button "Top Gainers" [ref=e171]
+                  - button "Top Losers" [ref=e172]
+                - table [ref=e178]:
+                  - rowgroup [ref=e179]:
+                    - row "coinName priceChangePercent1h price" [ref=e180]:
+                      - columnheader "coinName" [ref=e181]:
+                        - generic [ref=e182]: coinName
+                      - columnheader "priceChangePercent1h" [ref=e183]:
+                        - generic [ref=e184]: priceChangePercent1h
+                      - columnheader "price" [ref=e185]:
+                        - generic [ref=e186]: price
+                  - rowgroup
+      - generic [ref=e187]:
+        - heading "Investment Opportunities" [level=1] [ref=e188]
+        - generic [ref=e189]:
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - generic [ref=e192]:
+                - generic [ref=e193]:
+                  - img "title" [ref=e195]
+                  - text: Backed by $29B in Real Assets Across MultiBank Group's 4 Pillars
+                - link "Buy Now" [ref=e196] [cursor=pointer]:
+                  - /url: /trade/MBG_USDT
+                  - text: Buy Now
+                  - img [ref=e198]
+              - img "icon" [ref=e201]
+            - img "bg" [ref=e202]
+          - generic [ref=e203]:
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - img "title" [ref=e208]
+                  - text: Invest in tokenized Real World Assets
+                - text: Coming Soon
+              - img "icon" [ref=e210]
+            - img "bg" [ref=e211]
+      - generic [ref=e212]:
+        - heading "Quick Access Tools" [level=1] [ref=e213]
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - heading "Convert Your Assets" [level=4] [ref=e217]
+              - text: Easily convert one cryptocurrency to another, with no fees.
+            - button "Convert" [ref=e218]
+          - generic [ref=e219]:
+            - img [ref=e221]
+            - generic [ref=e223]:
+              - heading "Quick Buy Crypto" [level=4] [ref=e224]
+              - text: Buy Crypto Instantly using your credit or debit card.
+            - button "Instant Buy" [ref=e225]
+          - generic [ref=e226]:
+            - img [ref=e228]
+            - generic [ref=e230]:
+              - heading "Quick Sell Your Assets" [level=4] [ref=e231]
+              - text: Panic Sell is a powerful tool that allows you to sell all your crypto assets in just one click.
+            - button "Panic Sell" [ref=e232]
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - heading "Trade on the Go" [level=1] [ref=e235]
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - generic [ref=e239]: Download MultiBank.io App
+                - paragraph [ref=e240]: Stay updated on recent prices using the mobile app.
+                - generic [ref=e241]:
+                  - link "app-store Available on App Store" [ref=e242] [cursor=pointer]:
+                    - /url: https://apps.apple.com/ae/app/multibank-io-buy-btc-crypto/id1592119946
+                    - generic [ref=e243]:
+                      - img "app-store" [ref=e244]
+                      - generic [ref=e245]:
+                        - paragraph [ref=e246]: Available on
+                        - heading "App Store" [level=3] [ref=e247]
+                  - link "google-play Available on Google Play" [ref=e248] [cursor=pointer]:
+                    - /url: https://play.google.com/store/apps/details?id=com.multibank.app&pli=1
+                    - generic [ref=e249]:
+                      - img "google-play" [ref=e250]
+                      - generic [ref=e251]:
+                        - paragraph [ref=e252]: Available on
+                        - heading "Google Play" [level=3] [ref=e253]
+              - generic [ref=e254]:
+                - img "qr-code" [ref=e255]
+                - generic [ref=e256]:
+                  - paragraph [ref=e257]: Scan now to download
+                  - paragraph [ref=e258]: iOS & Android
+            - img "bg" [ref=e259]
+        - generic [ref=e260]:
+          - heading "Market News" [level=1] [ref=e261]
+          - generic [ref=e266]:
+            - generic [ref=e268]: Top stories
+            - generic [ref=e269]:
+              - generic [ref=e272]:
+                - generic [ref=e273]: ADA Surges 15%, XRP Up 9%—But Bulls Should Not Celebrate Too Early
+                - generic [ref=e274]:
+                  - generic [ref=e275]: Dec 02, 2025
+                  - img [ref=e277]
+                  - generic [ref=e279]: Parshwa Turakhiya
+              - generic [ref=e282]:
+                - generic [ref=e283]: "Bitcoin Roars Back To $91,000: 'Counter-Trend Rally' Is Coming, But Be Patient, Analyst Says"
+                - generic [ref=e284]:
+                  - generic [ref=e285]: Dec 02, 2025
+                  - img [ref=e287]
+                  - generic [ref=e289]: Khyathi Dalal
+              - generic [ref=e292]:
+                - generic [ref=e293]: "XRPL Vs. Ethereum: The Definitive Institutional Guide To The Next Wave Of Digital Assets"
+                - generic [ref=e294]:
+                  - generic [ref=e295]: Dec 02, 2025
+                  - img [ref=e297]
+                  - generic [ref=e299]: Fehmi Fennia
+              - generic [ref=e302]:
+                - generic [ref=e303]: "MongoDB, Boeing Rally, Bitcoin Tops $90,000: What's Moving Markets Tuesday?"
+                - generic [ref=e304]:
+                  - generic [ref=e305]: Dec 02, 2025
+                  - img [ref=e307]
+                  - generic [ref=e309]: Piero Cingari
+              - generic [ref=e312]:
+                - generic [ref=e313]: Bank Of America Launches Bitcoin Coverage, Recommends Up To 4% Crypto Allocation
+                - generic [ref=e314]:
+                  - generic [ref=e315]: Dec 02, 2025
+                  - img [ref=e317]
+                  - generic [ref=e319]: Parshwa Turakhiya
+              - generic [ref=e322]:
+                - generic [ref=e323]: XRP Rallies 8% And The Trend Reversal May Have Just Begun
+                - generic [ref=e324]:
+                  - generic [ref=e325]: Dec 02, 2025
+                  - img [ref=e327]
+                  - generic [ref=e329]: Khyathi Dalal
+              - generic [ref=e332]:
+                - generic [ref=e333]: "Not Just Bitcoin: Strategy Partners With Snowflake To Standardize 'Messy' Data For AI"
+                - generic [ref=e334]:
+                  - generic [ref=e335]: Dec 02, 2025
+                  - img [ref=e337]
+                  - generic [ref=e339]: Anusuya Lahiri
+              - generic [ref=e342]:
+                - generic [ref=e343]: Poland's President Vetoes Crypto Bill, Sparking Major Political Clash Over Freedom And Regulation
+                - generic [ref=e344]:
+                  - generic [ref=e345]: Dec 02, 2025
+                  - img [ref=e347]
+                  - generic [ref=e349]: Hillary Remy
+              - generic [ref=e352]:
+                - generic [ref=e353]: SEC Aims To Position US As Center For 'Digital Asset Innovation' With 'Innovation Exemption'
+                - generic [ref=e354]:
+                  - generic [ref=e355]: Dec 02, 2025
+                  - img [ref=e357]
+                  - generic [ref=e359]: Parshwa Turakhiya
+              - generic [ref=e362]:
+                - generic [ref=e363]: Dogecoin Enters Accumulation Zone As Shiba Inu Burn Rate Soars 1,800%
+                - generic [ref=e364]:
+                  - generic [ref=e365]: Dec 02, 2025
+                  - img [ref=e367]
+                  - generic [ref=e369]: Khyathi Dalal
+              - generic [ref=e372]:
+                - generic [ref=e373]: Bitcoin Back In The $80,000s Feels Painful, But The Worst Part Is Over
+                - generic [ref=e374]:
+                  - generic [ref=e375]: Dec 02, 2025
+                  - img [ref=e377]
+                  - generic [ref=e379]: Khyathi Dalal
+              - generic [ref=e382]:
+                - generic [ref=e383]: Could AI Agents Exploit Ethereum, XRP, Solana? Anthropic Says It's Possible
+                - generic [ref=e384]:
+                  - generic [ref=e385]: Dec 02, 2025
+                  - img [ref=e387]
+                  - generic [ref=e389]: Parshwa Turakhiya
+              - generic [ref=e392]:
+                - generic [ref=e393]: If You're Expecting A Bitcoin Bear Market In 2026, You Have It Wrong, Grayscale Says
+                - generic [ref=e394]:
+                  - generic [ref=e395]: Dec 02, 2025
+                  - img [ref=e397]
+                  - generic [ref=e399]: Parshwa Turakhiya
+              - generic [ref=e402]:
+                - generic [ref=e403]: Why Tokenized Treasury Markets Are Becoming A New Safe Haven For Investors
+                - generic [ref=e404]:
+                  - generic [ref=e405]: Dec 02, 2025
+                  - img [ref=e407]
+                  - generic [ref=e409]: Hillary Remy
+              - generic [ref=e412]:
+                - generic [ref=e413]: "Federal Reserve Ends Quantitative Tightening: A New Era For Crypto Liquidity Begins"
+                - generic [ref=e414]:
+                  - generic [ref=e415]: Dec 02, 2025
+                  - img [ref=e417]
+                  - generic [ref=e419]: Hillary Remy
+      - generic [ref=e421]:
+        - button [ref=e422]:
+          - generic:
+            - img
+        - generic [ref=e424]:
+          - generic [ref=e425]:
+            - generic:
+              - generic [ref=e426]: Use Instant Buy to get your first Crypto with your card!
+              - text: Buy Crypto
+              - img [ref=e428]
+              - generic [ref=e429]: Deposit using Card or Wire Transfer
+              - text: Deposit
+              - img [ref=e431]
+              - generic [ref=e432]:
+                - text: Contact our
+                - generic [ref=e433]: 24/7 Customer Support
+                - text: for any inquiries
+              - text: Contact support
+              - img [ref=e435]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic [ref=e436]:
+                        - text: Use Instant Buy to get your
+                        - text: first Crypto with your card!
+                      - generic:
+                        - text: Buy Crypto
+                        - generic:
+                          - img
+                    - img "Banner image" [ref=e438]
+              - generic [ref=e439]: Deposit using Card or Wire Transfer
+              - text: Deposit
+              - img [ref=e441]
+              - generic [ref=e442]:
+                - text: Contact our
+                - generic [ref=e443]: 24/7 Customer Support
+                - text: for any inquiries
+              - text: Contact support
+              - img [ref=e445]
+              - generic [ref=e446]: Use Instant Buy to get your first Crypto with your card!
+              - text: Buy Crypto
+              - img [ref=e448]
+              - generic [ref=e449]: Deposit using Card or Wire Transfer
+              - text: Deposit
+              - img [ref=e451]
+              - generic [ref=e452]:
+                - text: Contact our
+                - generic [ref=e453]: 24/7 Customer Support
+                - text: for any inquiries
+              - text: Contact support
+              - img [ref=e455]
+          - list [ref=e456]:
+            - listitem [ref=e457]:
+              - img [ref=e460]
+            - listitem [ref=e462]:
+              - img [ref=e465]
+            - listitem [ref=e467]:
+              - img [ref=e470]
+        - button [ref=e472]:
+          - generic:
+            - img
+  - iframe [ref=e475]:
+    - main [ref=f2e2]:
+      - button "Open LiveChat chat widget" [ref=f2e6] [cursor=pointer]:
+        - img [ref=f2e8]
+```

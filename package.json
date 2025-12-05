@@ -9,6 +9,11 @@
     "string-frequency": "ts-node src/utils/stringFrequency.ts",
     "test:nav": "playwright test tests/navigation.spec.ts",
     "test:spot": "playwright test tests/spotSection.spec.ts",
+    "test:content": "playwright test tests/contentValidation.spec.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "pretest": "npm run lint && npm run allure:history",
+    "allure:history": "mkdir -p allure-results/history && cp -r allure-report/history/* allure-results/history/ 2>/dev/null || true",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
     "report": "npm run allure:generate && npm run allure:open"
@@ -28,8 +33,12 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^20.19.25",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
     "allure-commandline": "^2.34.1",
     "allure-playwright": "^2.15.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-playwright": "^2.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }

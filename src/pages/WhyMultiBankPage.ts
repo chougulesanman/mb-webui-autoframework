@@ -1,0 +1,185 @@
+import { Page, Locator } from '@playwright/test';
+import { BasePage } from './BasePage';
+import contentData from '../../data/contentValidation.json';
+
+const why = contentData.aboutUs.whyMultibank;
+
+export class WhyMultiBankPage extends BasePage {
+  
+  readonly heading1: Locator;
+  readonly description1: Locator;
+  readonly heading2: Locator;
+  readonly description2: Locator;
+  readonly portfolioHeading: Locator;
+  readonly portfolioDescription: Locator;
+  readonly tradingSpeedHeading: Locator;
+  readonly tradingSpeedDescription: Locator;
+  readonly paymentHeading: Locator;
+  readonly paymentDescription: Locator;
+  readonly panicSellHeading: Locator;
+  readonly panicSellDescription: Locator;
+  readonly convertHeading: Locator;
+  readonly convertDescription: Locator;
+  readonly advantagesTitle: Locator;
+  readonly spotTradingHeading: Locator;
+  readonly spotTradingDescription: Locator;
+  readonly rwaHeading: Locator;
+  readonly rwaDescription: Locator;
+  readonly instantBuyHeading: Locator;
+  readonly instantBuyDescription: Locator;
+
+  constructor(page: Page) {
+    super(page);
+
+    const mainLayout = this.page.locator('#mainLayout');
+    this.heading1 = this.page.getByText(why.hero.heading1, { exact: false });
+    this.description1 = this.page.getByText(why.hero.description1, { exact: false });
+    this.heading2 = this.page.getByText(why.hero.heading2, { exact: false });
+    this.description2 = this.page.getByText(why.hero.description2, { exact: false });
+    this.portfolioHeading = this.page.getByText(why.sections.portfolio.heading, { exact: false });
+    this.portfolioDescription = this.page.getByText(why.sections.portfolio.description, { exact: false });
+    this.tradingSpeedHeading = this.page.getByText(why.sections.tradingSpeed.heading, { exact: false });
+    this.tradingSpeedDescription = this.page.getByText(why.sections.tradingSpeed.description, { exact: false });
+    this.paymentHeading = this.page.getByText(why.sections.paymentMethods.heading, { exact: false });
+    this.paymentDescription = this.page.getByText(why.sections.paymentMethods.description, { exact: false });
+    this.panicSellHeading = mainLayout.getByText(why.sections.panicSell.heading, { exact: false });
+    this.panicSellDescription = this.page.getByText(why.sections.panicSell.description, { exact: false });
+    this.convertHeading = mainLayout.getByText(why.sections.convert.heading, { exact: true });
+    this.convertDescription = this.page.getByText(why.sections.convert.description, { exact: false });
+    this.advantagesTitle = mainLayout.getByText(why.advantages.title, { exact: false });
+    this.spotTradingHeading = mainLayout.getByText(why.spotTrading.heading, { exact: false });
+    this.spotTradingDescription = this.page.getByText(why.spotTrading.description, { exact: false });
+    this.rwaHeading = mainLayout.getByText(why.rwa.heading, { exact: false });
+    this.rwaDescription = this.page.getByText(why.rwa.description, { exact: false });
+    this.instantBuyHeading = this.page.getByText(why.instantBuy.heading, { exact: false });
+    this.instantBuyDescription = this.page.getByText(why.instantBuy.description, { exact: false });
+  }
+
+  getHeroElements(): Locator[] {
+    return [this.heading1, this.description1, this.heading2, this.description2];
+  }
+
+  getSectionElements(): Locator[] {
+    return [
+      this.portfolioHeading, this.portfolioDescription, this.tradingSpeedHeading, this.tradingSpeedDescription, this.paymentHeading, this.paymentDescription, this.panicSellHeading, this.panicSellDescription, this.convertHeading, this.convertDescription, this.rwaHeading, this.rwaDescription, this.instantBuyHeading, this.instantBuyDescription
+    ];
+  }
+
+  async verifyHeroSection() {
+    await this.verifyElementsVisible(this.getHeroElements());
+  }
+
+  async verifySections() {
+    await this.verifyElementsVisible(this.getSectionElements());
+  }
+
+  async verifyAdvantagesSection() {
+    await this.verifyElementsVisible([this.advantagesTitle]);
+    
+    const advantageLocators = why.advantages.items.map(advantage => 
+        this.page.getByRole('heading', { name: advantage.heading })
+    //   this.page.getByText(advantage.heading, { exact: false })
+    );
+    const descriptionLocators = why.advantages.items.map(advantage => 
+      this.page.getByText(advantage.description, { exact: false })
+    );
+    
+    await this.verifyElementsVisible([...advantageLocators, ...descriptionLocators]);
+  }
+
+  async verifySpotTradingSection() {
+    await this.verifyElementsVisible([this.spotTradingHeading, this.spotTradingDescription]);
+    
+    const featureLocators = why.spotTrading.features.map(feature => 
+      this.page.getByText(feature, { exact: false })
+    );
+    await this.verifyElementsVisible(featureLocators);
+  }
+
+  async verifyAllComponents() {
+    await this.verifyHeroSection();
+    await this.verifySections();
+    await this.verifyAdvantagesSection();
+    await this.verifySpotTradingSection();
+  }
+
+  /*
+  async verifyHeroSection() {
+    await expect(this.heading1).toBeVisible();
+    await expect(this.description1).toBeVisible();
+    await expect(this.heading2).toBeVisible();
+    await expect(this.description2).toBeVisible();
+    await expect(this.heading3).toBeVisible();
+    await expect(this.description3).toBeVisible();
+  }
+
+  async verifyPortfolioSection() {
+    await expect(this.portfolioHeading).toBeVisible();
+    await expect(this.portfolioDescription).toBeVisible();
+  }
+
+  async verifyTradingSpeedSection() {
+    await expect(this.tradingSpeedHeading).toBeVisible();
+    await expect(this.tradingSpeedDescription).toBeVisible();
+  }
+
+  async verifyPaymentMethodsSection() {
+    await expect(this.paymentHeading).toBeVisible();
+    await expect(this.paymentDescription).toBeVisible();
+  }
+
+  async verifyPanicSellSection() {
+    await expect(this.panicSellHeading).toBeVisible();
+    await expect(this.panicSellDescription).toBeVisible();
+  }
+
+  async verifyConvertSection() {
+    await expect(this.convertHeading).toBeVisible();
+    await expect(this.convertDescription).toBeVisible();
+  }
+
+  async verifyAdvantagesSection() {
+    await expect(this.advantagesTitle).toBeVisible();
+    
+    for (const advantage of why.advantages.items) {
+      const advantageHeading = this.page.getByText(advantage.heading, { exact: false });
+      const advantageDescription = this.page.getByText(advantage.description, { exact: false });
+      await expect(advantageHeading).toBeVisible();
+      await expect(advantageDescription).toBeVisible();
+    }
+  }
+
+  async verifySpotTradingSection() {
+    await expect(this.spotTradingHeading).toBeVisible();
+    await expect(this.spotTradingDescription).toBeVisible();
+    
+    for (const feature of why.spotTrading.features) {
+      const featureText = this.page.getByText(feature, { exact: false });
+      await expect(featureText).toBeVisible();
+    }
+  }
+
+  async verifyRWASection() {
+    await expect(this.rwaHeading).toBeVisible();
+    await expect(this.rwaDescription).toBeVisible();
+  }
+
+  async verifyInstantBuySection() {
+    await expect(this.instantBuyHeading).toBeVisible();
+    await expect(this.instantBuyDescription).toBeVisible();
+  }
+
+  async verifyAllComponents() {
+    await this.verifyHeroSection();
+    await this.verifyPortfolioSection();
+    await this.verifyTradingSpeedSection();
+    await this.verifyPaymentMethodsSection();
+    await this.verifyPanicSellSection();
+    await this.verifyConvertSection();
+    await this.verifyAdvantagesSection();
+    await this.verifySpotTradingSection();
+    await this.verifyRWASection();
+    await this.verifyInstantBuySection();
+  }
+    */
+}
