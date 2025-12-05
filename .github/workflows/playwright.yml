@@ -1,0 +1,158 @@
+name: Playwright Tests
+
+on:
+  push:
+    branches: [main, master]
+  
+  pull_request:
+    branches: [main, master]
+  
+  workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Select test suite to run'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - navigation
+          - spot
+          - content
+          - stringFrequency
+      browser:
+        description: 'Select browser'
+        required: true
+        default: 'chromium'
+        type: choice
+        options:
+          - chromium
+          - firefox
+          - webkit
+          - all
+
+jobs:
+  test:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      
+      - name: Download previous Allure history
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-history
+          path: allure-results/history
+        continue-on-error: true
+      
+      - name: Run Playwright tests
+        run: |
+          # Determine which tests to run
+          TEST_FILE=""
+          case "${{ github.event.inputs.test_suite || 'all' }}" in
+            navigation)
+              TEST_FILE="tests/navigation.spec.ts"
+              ;;
+            spot)
+              TEST_FILE="tests/spotSection.spec.ts"
+              ;;
+            content)
+              TEST_FILE="tests/contentValidation.spec.ts"
+              ;;
+            stringFrequency)
+              TEST_FILE="tests/stringFrequency.spec.ts"
+              ;;
+            all)
+              TEST_FILE=""
+              ;;
+          esac
+          
+          # Determine browser project
+          BROWSER="${{ github.event.inputs.browser || 'chromium' }}"
+          if [ "$BROWSER" = "all" ]; then
+            PROJECT_FLAG=""
+          else
+            PROJECT_FLAG="--project=$BROWSER"
+          fi
+          
+          # Run tests
+          npx playwright test $TEST_FILE $PROJECT_FLAG
+        env:
+          CI: true
+      
+      - name: Generate Allure report
+        if: always()
+        run: npm run allure:generate
+      
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results/
+          retention-days: 30
+      
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report/
+          retention-days: 30
+      
+      - name: Save Allure history
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-history
+          path: allure-report/history/
+          retention-days: 90
+          overwrite: true
+      
+      - name: Upload test artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results/
+          retention-days: 7
+
+  deploy-report:
+    needs: test
+    if: always() && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    
+    steps:
+      - name: Download Allure report
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report/
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: allure-report/
+      
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
