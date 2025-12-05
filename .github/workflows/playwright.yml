@@ -93,6 +93,7 @@ jobs:
           npx playwright test $TEST_FILE $PROJECT_FLAG
         env:
           CI: true
+          PLAYWRIGHT_SLOW_MO: 100
       
       - name: Generate Allure report
         if: always()
