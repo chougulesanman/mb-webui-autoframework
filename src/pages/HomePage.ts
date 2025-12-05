@@ -73,8 +73,6 @@ export class HomePage extends BasePage {
 
         //content validation locators
         this.downloadSectionTitle = this.page.getByRole('heading', { name: contentData.homepage.downloadSection.title });
-        // this.appStoreLink = this.page.getByRole('link', { name: new RegExp(contentData.homepage.downloadSection.links[0].text) });
-        // this.googlePlayLink = this.page.getByRole('link', { name: new RegExp(contentData.homepage.downloadSection.links[1].text) });
         this.bannerCarousel = this.page.locator('div.style_wrapper__ag9kn').filter({ has: this.page.getByText(contentData.homepage.marketingBanner.texts[0]) }).first();
 
         //Why Multibank locators

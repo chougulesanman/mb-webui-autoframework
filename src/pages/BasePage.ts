@@ -18,15 +18,12 @@ export class BasePage {
 
     async verifyElementsVisible(elements: Locator[]) {
         for (const element of elements) {
-            // await expect(element).toBeAttached({ timeout: 10000 });
-            // await element.scrollIntoViewIfNeeded();
             await expect(element).toBeVisible();
         }
     }
 
     async verifyTableHasData(table: Locator, minRows: number) {
         const rows = table.locator('tbody tr');
-        // await expect(rows).toHaveCount(await rows.count());
         await expect(rows.first()).toBeVisible();
         const count = await rows.count();
         expect(count).toBeGreaterThanOrEqual(minRows);

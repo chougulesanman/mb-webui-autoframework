@@ -19,7 +19,6 @@ test.describe('Content Validation Tests', () => {
 
         test('Marketing banner contains expected content', async ({}) => {
             await homePage.scrollToElement(homePage.bannerCarousel);
-            // await expect(homePage.bannerCarousel).toBeVisible();
             await homePage.verifyElementsVisible([homePage.bannerCarousel]);
             await homePage.verifyMarketingBannersExist();
         });
@@ -35,7 +34,6 @@ test.describe('Content Validation Tests', () => {
 
         test('Download section title is visible', async ({}) => {
             await homePage.scrollToElement(homePage.downloadSectionTitle);
-            // await expect(homePage.downloadSectionTitle).toBeVisible();
             await homePage.verifyElementsVisible([homePage.downloadSectionTitle]);
         });
 

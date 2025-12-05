@@ -78,7 +78,6 @@ export class WhyMultiBankPage extends BasePage {
     
     const advantageLocators = why.advantages.items.map(advantage => 
         this.page.getByRole('heading', { name: advantage.heading })
-    //   this.page.getByText(advantage.heading, { exact: false })
     );
     const descriptionLocators = why.advantages.items.map(advantage => 
       this.page.getByText(advantage.description, { exact: false })
@@ -102,84 +101,4 @@ export class WhyMultiBankPage extends BasePage {
     await this.verifyAdvantagesSection();
     await this.verifySpotTradingSection();
   }
-
-  /*
-  async verifyHeroSection() {
-    await expect(this.heading1).toBeVisible();
-    await expect(this.description1).toBeVisible();
-    await expect(this.heading2).toBeVisible();
-    await expect(this.description2).toBeVisible();
-    await expect(this.heading3).toBeVisible();
-    await expect(this.description3).toBeVisible();
-  }
-
-  async verifyPortfolioSection() {
-    await expect(this.portfolioHeading).toBeVisible();
-    await expect(this.portfolioDescription).toBeVisible();
-  }
-
-  async verifyTradingSpeedSection() {
-    await expect(this.tradingSpeedHeading).toBeVisible();
-    await expect(this.tradingSpeedDescription).toBeVisible();
-  }
-
-  async verifyPaymentMethodsSection() {
-    await expect(this.paymentHeading).toBeVisible();
-    await expect(this.paymentDescription).toBeVisible();
-  }
-
-  async verifyPanicSellSection() {
-    await expect(this.panicSellHeading).toBeVisible();
-    await expect(this.panicSellDescription).toBeVisible();
-  }
-
-  async verifyConvertSection() {
-    await expect(this.convertHeading).toBeVisible();
-    await expect(this.convertDescription).toBeVisible();
-  }
-
-  async verifyAdvantagesSection() {
-    await expect(this.advantagesTitle).toBeVisible();
-    
-    for (const advantage of why.advantages.items) {
-      const advantageHeading = this.page.getByText(advantage.heading, { exact: false });
-      const advantageDescription = this.page.getByText(advantage.description, { exact: false });
-      await expect(advantageHeading).toBeVisible();
-      await expect(advantageDescription).toBeVisible();
-    }
-  }
-
-  async verifySpotTradingSection() {
-    await expect(this.spotTradingHeading).toBeVisible();
-    await expect(this.spotTradingDescription).toBeVisible();
-    
-    for (const feature of why.spotTrading.features) {
-      const featureText = this.page.getByText(feature, { exact: false });
-      await expect(featureText).toBeVisible();
-    }
-  }
-
-  async verifyRWASection() {
-    await expect(this.rwaHeading).toBeVisible();
-    await expect(this.rwaDescription).toBeVisible();
-  }
-
-  async verifyInstantBuySection() {
-    await expect(this.instantBuyHeading).toBeVisible();
-    await expect(this.instantBuyDescription).toBeVisible();
-  }
-
-  async verifyAllComponents() {
-    await this.verifyHeroSection();
-    await this.verifyPortfolioSection();
-    await this.verifyTradingSpeedSection();
-    await this.verifyPaymentMethodsSection();
-    await this.verifyPanicSellSection();
-    await this.verifyConvertSection();
-    await this.verifyAdvantagesSection();
-    await this.verifySpotTradingSection();
-    await this.verifyRWASection();
-    await this.verifyInstantBuySection();
-  }
-    */
 }
