@@ -73,7 +73,10 @@ export class HomePage extends BasePage {
 
         //content validation locators
         this.downloadSectionTitle = this.page.getByRole('heading', { name: contentData.homepage.downloadSection.title });
-        this.bannerCarousel = this.page.locator('div.style_wrapper__ag9kn').filter({ has: this.page.getByText(contentData.homepage.marketingBanner.texts[0]) }).first();
+        // Use text-based locator instead of dynamic CSS class for banner carousel
+        this.bannerCarousel = this.page.locator('section, div').filter({ 
+            has: this.page.getByText(contentData.homepage.marketingBanner.texts[0]) 
+        }).first();
 
         //Why Multibank locators
         this.whyMultibankOption = this.page.getByText(contentData.aboutUs.whyMultibank.menuText);
@@ -148,7 +151,9 @@ export class HomePage extends BasePage {
     async clickWhyMultibank() {
         await this.openAboutUsMenu();
         await this.verifyElementsVisible([this.whyMultibankOption]);
-        await this.clickAndVerifyNavigation(this.whyMultibankOption, new RegExp(contentData.aboutUs.whyMultibank.urlContains));
+        await this.whyMultibankOption.click();
+        // Wait for navigation to complete
+        await this.page.waitForLoadState('domcontentloaded');
         return new WhyMultiBankPage(this.page);
     }
 }

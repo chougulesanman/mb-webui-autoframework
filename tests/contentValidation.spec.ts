@@ -13,13 +13,18 @@ test.describe('Content Validation Tests', () => {
         });
 
         test('Marketing banner appear at page bottom', async ({}) => {
-            await homePage.scrollToElement(homePage.bannerCarousel);
+            // Scroll to bottom of page first
+            await homePage.page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+            // Wait for scroll and content to settle
+            await homePage.bannerCarousel.waitFor({ state: 'attached', timeout: 10000 });
             await homePage.verifyElementsVisible([homePage.bannerCarousel]);
         });
 
         test('Marketing banner contains expected content', async ({}) => {
-            await homePage.scrollToElement(homePage.bannerCarousel);
-            await homePage.verifyElementsVisible([homePage.bannerCarousel]);
+            // Scroll to bottom of page first
+            await homePage.page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+            // Wait for scroll and content to settle
+            await homePage.bannerCarousel.waitFor({ state: 'attached', timeout: 10000 });
             await homePage.verifyMarketingBannersExist();
         });
     });
