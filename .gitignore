@@ -6,3 +6,6 @@ playwright/.cache/
 .env
 *.log
 .DS_Store
+test-results/
+allure-results/
+allure-report/
