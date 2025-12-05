@@ -57,9 +57,12 @@ mb-webui-autoframework/
 Before running the tests, ensure you have the following installed:
 
 | **Node.js** | 20.x or higher | [Download](https://nodejs.org/) |
+
 | **npm** | 10.x or higher | Comes with Node.js |
+
 | **Git** | Latest | [Download](https://git-scm.com/) |
-| **Allure CLI** | Latest (optional) | `npm install -g allure-commandline` |
+
+| **Allure CLI** | Latest | `npm install -g allure-commandline` |
 
 ### Verify Installation
 
@@ -164,6 +167,7 @@ Tests automatically run on **GitHub Actions** when:
 4. Choose options:
 
 | Test Suite | `all`, `navigation`, `spot`, `content`, `stringFrequency` |
+
 | Browser | `chromium`, `firefox`, `webkit`, `all` |
 
 5. Click **"Run workflow"**
@@ -173,8 +177,11 @@ Tests automatically run on **GitHub Actions** when:
 ## 🧪 Test Suites
 
 | **Navigation** | `navigation.spec.ts` | Verifies top navigation menu items visibility and navigation |
+
 | **Spot Section** | `spotSection.spec.ts` | Tests spot trading section, category tabs, table data |
+
 | **Content Validation** | `contentValidation.spec.ts` | Validates marketing banners, download links, Why MultiBank page |
+
 | **String Frequency** | `stringFrequency.spec.ts` | Tests string frequency utility function |
 
 ---
@@ -202,11 +209,6 @@ After GitHub Actions run:
 1. Go to the completed workflow run
 2. Download `allure-report` artifact
 3. Extract and open `index.html`
-
-Or view on **GitHub Pages** (if enabled):
-```
-https://chougulesanman.github.io/mb-webui-autoframework/
-```
 
 ---
 
