@@ -31,6 +31,7 @@ module.exports = [
       '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       'playwright/no-wait-for-timeout': 'warn',
+      'playwright/no-networkidle': 'off',
       'playwright/prefer-web-first-assertions': 'warn',
       'playwright/expect-expect': 'off',
       'no-console': 'warn'

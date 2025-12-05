@@ -8,7 +8,7 @@ export class BasePage {
     }
 
     async navigate(path: string) {
-        await this.page.goto(path, { waitUntil: 'domcontentloaded' });
+        await this.page.goto(path, { waitUntil: 'load' });
     }
 
     async clickAndVerifyNavigation(link: Locator, expectedUrl: string | RegExp) {

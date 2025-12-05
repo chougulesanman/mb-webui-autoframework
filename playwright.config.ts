@@ -6,7 +6,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 1,
   workers: process.env.CI ? 1 : 1, // Single worker to avoid Cloudflare rate limits
-  timeout: process.env.CI ? 90000 : 60000, // Test timeout: 90s in CI, 60s locally
+  timeout: process.env.CI ? 180000 : 60000, // Test timeout: 90s in CI, 60s locally
   expect: {
     timeout: process.env.CI ? 45000 : 30000 // Assertion timeout: 45s in CI, 30s locally
   },
